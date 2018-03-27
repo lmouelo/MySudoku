@@ -38,15 +38,12 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         tabVal = val.toArray(tabVal);
 
 
-        ArrayAdapter <String>adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,android.R.id.text1,tabVal);
+        ArrayAdapter <String>adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,tabVal);
         listview.setAdapter(adapter);
-
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
                 Toast.makeText(Main2Activity.this, view.toString() , Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(),Main3Activity.class));
             }

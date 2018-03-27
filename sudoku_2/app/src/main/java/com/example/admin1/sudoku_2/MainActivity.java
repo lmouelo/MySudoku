@@ -25,13 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if( view.getId()==R.id.easy) {
             startActivities(new Intent[]{new Intent(this, Main2Activity.class)});
-
         }
+
         if( view.getId()==R.id.hard) {
             startActivities(new Intent[]{new Intent(this, Main2Activity.class)});
         }
-
     }
-
 
 }
